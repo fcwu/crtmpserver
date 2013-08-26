@@ -17,15 +17,13 @@ DEB_CONFIGURE_FLAGS = \
 			-DTEMP_FRAMEWORK_VER="$(DEB_UPSTREAM_VERSION)" \
 			-DCRTMPSERVER_SOURCES_ROOT=$(CURDIR)/sources \
 			-DCRTMPSERVER_CONSTANTS_ROOT=$(CURDIR)/constants
-#aaa\
-			-DCRTMPSERVER_SOURCES_ROOT=$(CURDIR) \
+
+override_dh_testdir:
+	rm -rf CMakeCache.txt
+	cmake $(DEB_CONFIGURE_FLAGS) -- builders/cmake 
 
 %:
 	dh $@ 
-
-override_dh_auto_configure:
-	echo $(CURDIR)
-	cmake $(DEB_CONFIGURE_FLAGS) -- builders/cmake 
 
 get-orig-source:
 	debian/get-svn-source.sh

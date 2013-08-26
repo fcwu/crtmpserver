@@ -1,2 +1,1 @@
-usr/lib/crtmpserver/libcommon.so
-usr/lib/crtmpserver/libthelib.so
+usr/lib/crtmpserver/lib* usr/lib/crtmpserver/

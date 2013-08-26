@@ -1,8 +1,20 @@
-crtmpserver (1.0~dfsg-4+svn789~precise1) unstable; urgency=low
+crtmpserver (1.0~dfsg-4+svn789~precise3) precise; urgency=low
+
+  * Fix pbuild failure
+
+ -- Fan-Cheng Wu (Doro Wu) <fcwu.tw@gmail.com>  Tue, 27 Aug 2013 00:27:13 +0800
+
+crtmpserver (1.0~dfsg-4+svn789~precise2) precise; urgency=low
+
+  * bump
+
+ -- Fan-Cheng Wu (Doro Wu) <fcwu.tw@gmail.com>  Mon, 26 Aug 2013 22:17:21 +0800
+
+crtmpserver (1.0~dfsg-4+svn789~precise1) precise; urgency=low
 
   * No change for Ubuntu 12.04
 
- -- Doro Wu <doro.wu@canonical.com>  Mon, 26 Aug 2013 18:35:45 +0800
+ -- Fan-Cheng Wu (Doro Wu) <fcwu.tw@gmail.com>  Mon, 26 Aug 2013 22:13:32 +0800
 
 crtmpserver (1.0~dfsg-4+svn789) unstable; urgency=low
 
